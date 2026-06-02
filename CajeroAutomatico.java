@@ -30,7 +30,7 @@ public class CajeroAutomatico {
 
                 case 2:
                     System.out.print("Ingrese el monto a depositar: S/ ");
-                    double deposito = entrada.nextDouble();
+                    double deposito = entrada.nextInt();
                     saldo += deposito;
                     System.out.println("Depósito realizado con éxito.");
                     System.out.println("Nuevo saldo: S/ " + saldo);
@@ -38,7 +38,7 @@ public class CajeroAutomatico {
 
                 case 3:
                     System.out.print("Ingrese el monto a retirar: S/ ");
-                    double retiro = entrada.nextDouble();
+                    double retiro = entrada.nextInt();
 
                     if (retiro <= saldo) {
                         saldo -= retiro;
