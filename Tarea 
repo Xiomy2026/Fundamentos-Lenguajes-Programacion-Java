@@ -1,1 +1,23 @@
-hola
+import java.util.Scanner;
+
+public class AdivinaNumero {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int numeroSecreto = 15;
+
+        while (true) {
+            System.out.print("Ingrese un número: ");
+            int numero = entrada.nextInt();
+
+            if (numero == numeroSecreto) {
+                System.out.println("¡Correcto!");
+                break;
+            } else {
+                System.out.println("¡Incorrecto!");
+            }
+        }
+
+        entrada.close();
+    }
+}
